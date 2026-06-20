@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Lead {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  name      String
+  email     String
+  company   String?
+  service   String
+  budget    String?
+  message   String
+  type      String   @default("Contact Form")
+}
+
+model CaseStudy {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  title     String
+  category  String
+  image     String?
+}
+
+model Post {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  title     String
+  excerpt   String
+  image     String?
+}
