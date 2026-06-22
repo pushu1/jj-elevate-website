@@ -19,21 +19,21 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email Us",
-    value: "hello@jjelevate.com",
-    href: "mailto:hello@jjelevate.com",
+    value: "info@jjelevate.com",
+    href: "mailto:info@jjelevate.com",
     description: "We respond within 2 business hours",
   },
   {
     icon: Phone,
     label: "Call Us",
-    value: "+1 (555) 987-4321",
-    href: "tel:+15559874321",
-    description: "Mon–Fri, 9am–6pm EST",
+    value: "+91 78500 27373",
+    href: "tel:+917850027373",
+    description: "Mon–Fri, 9AM–6PM",
   },
   {
     icon: MapPin,
     label: "Visit Us",
-    value: "New York, NY 10001",
+    value: "226, Pal Rd, near 56 Bhog Sweets, opposite Samrat Ashok Udhyan, Keshavnagar, Jodhpur, Rajasthan 342001",
     href: "#",
     description: "By appointment only",
   },
@@ -197,23 +197,20 @@ export default function ContactPage() {
               </div>
 
               {/* Map placeholder */}
-              <div className="rounded-2xl overflow-hidden border border-charcoal/10 h-52 relative shadow-inner">
-                <div className="absolute inset-0 bg-gradient-to-br from-magenta/5 via-white to-golden/5 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-10 h-10 text-slate mx-auto mb-3" />
-                    <p className="text-slate font-bold">New York, NY</p>
-                    <p className="text-slate/50 text-sm">United States</p>
-                  </div>
-                </div>
-                {/* Decorative grid */}
-                <div
-                  className="absolute inset-0 opacity-10 pointer-events-none"
-                  style={{
-                    backgroundImage: "linear-gradient(to right, #F20B57 1px, transparent 1px), linear-gradient(to bottom, #F20B57 1px, transparent 1px)",
-                    backgroundSize: "30px 30px",
-                  }}
-                />
-              </div>
+             
+<div className="rounded-2xl overflow-hidden border border-charcoal/10 h-52 shadow-inner">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.5690363340937!2d72.9805652!3d26.2521926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743a4545a6802a9%3A0x6869c086efd31a97!2sJJ%20Elevate%20%7C%20Digital%20Marketing%20Agency%7C%20Branding%20%7C%20Advertising%20%7C%20Jodhpur!5e1!3m2!1sen!2sin!4v1782110017662!5m2!1sen!2sin"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    className="w-full h-full"
+  />
+</div>
+
             </div>
 
             {/* ── Right: Contact Form ─────────── */}
