@@ -14,16 +14,16 @@ export const metadata: Metadata = {
     default: "JJ Elevate | Premium Digital Marketing Agency",
     template: "%s | JJ Elevate",
   },
+
   description:
     "JJ Elevate is a premium digital marketing agency driving explosive growth for ambitious brands through SEO, PPC, web development, and content creation.",
-  keywords: [
-    "digital marketing agency",
-    "SEO",
-    "PPC",
-    "web development",
-    "content marketing",
-    "social media marketing",
-  ],
+
+  icons: {
+    icon: "/JJELEVATE.png",
+    shortcut: "/JJELEVATE.png",
+    apple: "/JJELEVATE.png",
+  },
+
   openGraph: {
     type: "website",
     siteName: "JJ Elevate",

@@ -79,7 +79,7 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("loading");
-    
+
     // Save to real SQLite database
     try {
       const { createLead } = await import("@/app/actions");
@@ -197,19 +197,19 @@ export default function ContactPage() {
               </div>
 
               {/* Map placeholder */}
-             
-<div className="rounded-2xl overflow-hidden border border-charcoal/10 h-52 shadow-inner">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.5690363340937!2d72.9805652!3d26.2521926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743a4545a6802a9%3A0x6869c086efd31a97!2sJJ%20Elevate%20%7C%20Digital%20Marketing%20Agency%7C%20Branding%20%7C%20Advertising%20%7C%20Jodhpur!5e1!3m2!1sen!2sin!4v1782110017662!5m2!1sen!2sin"
-    width="100%"
-    height="100%"
-    style={{ border: 0 }}
-    allowFullScreen
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-    className="w-full h-full"
-  />
-</div>
+
+              <div className="rounded-2xl overflow-hidden border border-charcoal/10 h-52 shadow-inner">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2986.5690363340937!2d72.9805652!3d26.2521926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743a4545a6802a9%3A0x6869c086efd31a97!2sJJ%20Elevate%20%7C%20Digital%20Marketing%20Agency%7C%20Branding%20%7C%20Advertising%20%7C%20Jodhpur!5e1!3m2!1sen!2sin!4v1782110017662!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full h-full"
+                />
+              </div>
 
             </div>
 
